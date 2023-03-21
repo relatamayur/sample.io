@@ -1,39 +1,56 @@
 <!DOCTYPE html>
-<html>  
-<head>  
-<title> SignUp Page</title>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TBBVHVR');</script>
-<!-- End Google Tag Manager -->
-</head>  
-<body align="center" >
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBBVHVR"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<h1> CREATE YOUR ACCOUNT</h1>  
-<table cellspacing="2" align="center" cellpadding="8" border="0">  
-<tr><td> Name</td>   
-<td><input type="text" placeholder="Enter your name" id="username" value="username"></td></tr>  
-<tr><td>Email </td>  
-<td><input type="text" placeholder="Enter your email id" id="email" value="email"></td></tr>  
-<tr><td> Set Password</td>  
-<td><input type="password" placeholder="Set a password" id="password"></td></tr>  
-<tr><td>Confirm Password</td>  
-<td><input type="password" placeholder="Confirm your password" id="p2"></td></tr>  
-<tr><td>  
-<input type="submit" value="Create" onClick="dataLayer.push({'username': 'username'});"/>  
-</table>  
+<html>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=TAG_ID"></script>
-<script type="text/javascript">
-  window.dataLayer = window.dataLayer || [];
-  gtag('js', new Date());
-  gtag('mayur', 'hello world');
-</script>
-</body>  
+<head>
+  <title> SignUp Page</title>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TBBVHVR');</script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body align="center">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBBVHVR" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <h1> CREATE YOUR ACCOUNT</h1>
+  <table cellspacing="2" align="center" cellpadding="8" border="0">
+    <tr>
+      <td> Name</td>
+      <td><input type="text" placeholder="Enter your name" id="username" value="username"></td>
+    </tr>
+    <tr>
+      <td>Email </td>
+      <td><input type="text" placeholder="Enter your email id" id="email" value="email"></td>
+    </tr>
+    <tr>
+      <td> Set Password</td>
+      <td><input type="password" placeholder="Set a password" id="password"></td>
+    </tr>
+    <tr>
+      <td>Confirm Password</td>
+      <td><input type="password" placeholder="Confirm your password" id="p2"></td>
+    </tr>
+    <tr>
+      <td>
+        <input type="submit" value="Create" onClick="gtag()" />
+  </table>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=TAG_ID"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){
+      dataLayer.push(username, document.getElementById("n1").value);
+    };
+    gtag('js', new Date());
+    gtag('mayur', 'hello world');
+  </script>
+</body>
 </html>
