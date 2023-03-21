@@ -26,13 +26,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <tr><td>Confirm Password</td>  
 <td><input type="password" placeholder="Confirm your password" id="p2"></td></tr>  
 <tr><td>  
-<input type="submit" value="Create" onClick="gtag()"/>  
+<input type="submit" value="Create" onClick="dataLayer.push({'username': 'username'});"/>  
 </table>  
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=TAG_ID"></script>
 <script type="text/javascript">
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(username)};
   gtag('js', new Date());
   gtag('mayur', 'hello world');
 </script>
