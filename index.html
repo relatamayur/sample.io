@@ -24,11 +24,11 @@
   <table cellspacing="2" align="center" cellpadding="8" border="0">
     <tr>
       <td> Name</td>
-      <td><input type="text" placeholder="Enter your name" id="username" value="username"></td>
+      <td><input type="text" placeholder="Enter your name" id="username"></td>
     </tr>
     <tr>
       <td>Email </td>
-      <td><input type="text" placeholder="Enter your email id" id="email" value="email"></td>
+      <td><input type="text" placeholder="Enter your email id" id="email"></td>
     </tr>
     <tr>
       <td> Set Password</td>
@@ -47,7 +47,7 @@
   <script type="text/javascript">
     window.dataLayer = window.dataLayer || [];
     function gtag(){
-      dataLayer.push(username, document.getElementById("n1").value);
+      dataLayer.push(username, document.getElementById("username").value);
     };
     gtag('js', new Date());
     gtag('mayur', 'hello world');
