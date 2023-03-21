@@ -26,14 +26,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <tr><td>Confirm Password</td>  
 <td><input type="password" placeholder="Confirm your password" id="p2"></td></tr>  
 <tr><td>  
-<input type="submit" value="Create" onClick="create_account()"/>  
+<input type="submit" value="Create" onClick="gtag()"/>  
 </table>  
-<script type="text/javascript">  
-function create_account(){
-          function gtag(){dataLayer.push(arguments)};
-          gtag('mayur', 'hello world');
-}  
-     
-</script>  
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=TAG_ID"></script>
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+  gtag('config', 'TAG_ID');
+</script>
 </body>  
 </html>
