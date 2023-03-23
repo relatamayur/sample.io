@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-09854HS6Y7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){
-    dataLayer.push(
-        'username': document.getElementById("username").value,
-        'email': document.getElementById("email").value,
-        'password': document.getElementById("password").value
-      });
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'G-09854HS6Y7');
-</script>
-  <title> SignUp Page</title>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TBBVHVR');</script>
-  <!-- End Google Tag Manager -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5TZ9C3V');</script>
+    <!-- End Google Tag Manager -->
+    <title> SignUp Page</title>
 </head>
 
 <body align="center">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBBVHVR" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <h1> CREATE YOUR ACCOUNT</h1>
-  <table cellspacing="2" align="center" cellpadding="8" border="0">
-    <tr>
-      <td> Name</td>
-      <td><input type="text" placeholder="Enter your name" id="username"></td>
-    </tr>
-    <tr>
-      <td>Email </td>
-      <td><input type="text" placeholder="Enter your email id" id="email"></td>
-    </tr>
-    <tr>
-      <td> Set Password</td>
-      <td><input type="password" placeholder="Set a password" id="password"></td>
-    </tr>
-    <tr>
-      <td>Confirm Password</td>
-      <td><input type="password" placeholder="Confirm your password" id="p2"></td>
-    </tr>
-    <tr>
-      <td>
-        <input type="submit" value="Create" onClick="gtag()" />
-  </table>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TZ9C3V" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <h1> CREATE YOUR ACCOUNT</h1>
+    <table cellspacing="2" align="center" cellpadding="8" border="0">
+        <tr>
+            <td> Name</td>
+            <td><input type="text" placeholder="Enter your name" id="username"></td>
+        </tr>
+        <tr>
+            <td>Email </td>
+            <td><input type="text" placeholder="Enter your email id" id="email"></td>
+        </tr>
+        <tr>
+            <td> Set Password</td>
+            <td><input type="password" placeholder="Set a password" id="password"></td>
+        </tr>
+        <tr>
+            <td>Confirm Password</td>
+            <td><input type="password" placeholder="Confirm your password" id="p2"></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Create" onClick="gtag()" />
+    </table>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=TAG_ID"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push({
+                'username': document.getElementById("username").value,
+                'email': document.getElementById("email").value,
+                'password': document.getElementById("password").value
+            });
+        };
+        gtag('js', new Date());
+        gtag('config', 'TAG_ID');
+    </script>
 </body>
 </html>
