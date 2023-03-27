@@ -42,18 +42,45 @@
         </tr>
         <tr>
             <td>
-                <input type="submit" value="Create" onClick="gtag()" />
+                <input type="submit" value="Create" onClick="gtag1()" />
+    </table>
+
+    <h1> Feedback</h1>
+    <table cellspacing="2" align="center" cellpadding="8" border="0">
+        <tr>
+            <td> Name</td>
+            <td><input type="text" placeholder="Enter your name" id="fusername"></td>
+        </tr>
+        <tr>
+            <td>Email </td>
+            <td><input type="text" placeholder="Enter your email id" id="femail"></td>
+        </tr>
+        <tr>
+            <td> Message</td>
+            <td><input type="message" placeholder="Your thoughts" id="message"></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Create" onClick="gtag2()" />
     </table>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=TAG_ID"></script>
     <script type="text/javascript">
         window.dataLayer = window.dataLayer || [];
-        function gtag() {
+        function gtag1() {
             dataLayer.push({
                 'event': 'submit',
                 'username': document.getElementById("username").value,
                 'email': document.getElementById("email").value,
                 'password': document.getElementById("password").value
+            });
+        };
+        function gtag2() {
+            dataLayer.push({
+                'event': 'feedback',
+                'username': document.getElementById("fusername").value,
+                'email': document.getElementById("femail").value,
+                'message': document.getElementById("message").value
             });
         };
         gtag('js', new Date());
